@@ -1,0 +1,6 @@
+# add files you do not want prettier to format here
+
+.yarn
+.next
+dist
+node_modules
