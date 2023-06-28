@@ -1,12 +1,17 @@
-// build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-// ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-// docs: Documentation only changes
-// feat: A new feature
-// fix: A bug fix
-// perf: A code change that improves performance
-// refactor: A code change that neither fixes a bug nor adds a feature
-// style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-// test: Adding missing tests or correcting existing tests
+// 'build': Commit related to build system or configuration changes.
+// 'chore': General maintenance or housekeeping tasks.
+// 'ci': Commit related to Continuous Integration (CI) configuration or scripts.
+// 'docs': Documentation-related changes or additions.
+// 'feat': New feature implementation or enhancement.
+// 'fix': Bug fixes or error corrections.
+// 'perf': Performance optimization or improvements.
+// 'refactor': Code refactoring without changing the functionality.
+// 'revert': Reverting previous commits or changes.
+// 'style': Code style changes (e.g., formatting, indentation) without functional impact.
+// 'test': Additions or modifications to test cases or test-related code.
+// 'translation': Changes related to translations or localization.
+// 'security': Security-related changes or fixes.
+// 'changeset': Changes related to the management of changesets (e.g., automated release notes).
 
 module.exports = {
   extends: ['@commitlint/config-conventional'],
