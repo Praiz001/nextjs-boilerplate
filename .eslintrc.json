@@ -1,9 +1,17 @@
 {
   "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "plugins": ["prettier"],
   "globals": {
     "React": "readonly"
   },
   "rules": {
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }], // Report unused variables
+
+    "camelcase": "error", // Enforce camelCase for function and variable names
+    "no-var": "error", // Disallow usage of var and encourage let or const
+    "prefer-const": "error", // Enforce usage of const for non-reassigned variables
+    "indent": ["error", 2], // Enforce two-space indentation
+    "quotes": ["error", "single"], // Enforce double quotes for consistency
+    "semi": ["error", "always"] // Require semicolons at the end of statements
   }
 }
