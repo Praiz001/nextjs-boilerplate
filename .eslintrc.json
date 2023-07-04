@@ -5,7 +5,7 @@
     "React": "readonly"
   },
   "rules": {
-    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }], // Report unused variables
+    "no-unused-vars": [2, { "args": "after-used", "argsIgnorePattern": "^_" }], // Report unused variables
 
     "camelcase": "error", // Enforce camelCase for function and variable names
     "no-var": "error", // Disallow usage of var and encourage let or const
@@ -13,6 +13,7 @@
     "indent": ["error", 2], // Enforce two-space indentation
     "quotes": ["error", "single"], // Enforce single quotes for consistency
     "semi": ["error", "always"], // Require semicolons at the end of statements
-    "no-console": "error"
+    "eqeqeq": "error", // Enforce strict equality (===) over loose equality (==)
+    "no-console": "error" // Disallow the use of console.log() and related console methods
   }
 }
